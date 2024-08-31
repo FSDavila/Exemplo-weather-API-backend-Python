@@ -7,6 +7,8 @@ it is also necessary to apply your city's flag to your token so it has permissio
 
 This API backend will cache all weather (1 hour expiration time) and city identification info (cached indefinitely) in its memory cache, so repetated requests for the same resources won't end up consuming the API unecessarily.
 
+A detailed Postman Collection is also provided in the package for easier learning of its usage.
+
 The main endpoints are:
 
 -POST /weather/getInfo: Will query the ClimaTempo API, using the provided City ID and number of future days to be included in the weather report.  
@@ -21,3 +23,21 @@ The main endpoints are:
 -Python HTTP Requests  
 -Python Logging  
 -Memory Caching (Caches the weather reports for avoidance of unecessary API calls for the same weather report info)  
+
+Flask install:
+```pip3 install Flask```
+
+Flask-Cors install:
+```pip3 install -U flask-cors```
+
+Flask-Restful install:
+```pip3 install flask-restful```
+
+HTTP Requests install:
+```pip3 install requests```
+
+Run application (Linux):
+```python3 weather_api_backend.py```
+
+Run application (Windows):
+```python weather_api_backend.py```
