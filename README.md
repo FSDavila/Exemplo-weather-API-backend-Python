@@ -14,10 +14,10 @@ POST /weather/getCityId: Get specific city's ID by city name and state name abbr
 PUT /weather/registerCity: Register city flag for token, so token has access to the weather report for the chosen city
 
 ## Technologies used:
--Python 
--Flask (For creating the API endpoint)
--Flask-Restful
--Flask-CORS
--Python HTTP Requests 
--Python Logging
--Memory Caching (Caches the weather reports for avoidance of unecessary API calls for the same weather report info)
+-Python  
+-Flask (For creating the API endpoint)  
+-Flask-Restful  
+-Flask-CORS  
+-Python HTTP Requests  
+-Python Logging  
+-Memory Caching (Caches the weather reports for avoidance of unecessary API calls for the same weather report info)  
