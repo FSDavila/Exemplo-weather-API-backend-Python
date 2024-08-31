@@ -9,10 +9,10 @@ This API backend will cache all weather (1 hour expiration time) and city identi
 
 Also, it has robust logging support (example):
 
-2024-08-31 01:48:11,801 - __main__ - INFO - Incoming search for city ID request for city name: Florianópolis and state: SC
-2024-08-31 01:48:11,802 - __main__ - INFO - Cache hit for City: Florianópolis
-2024-08-31 01:48:11,802 - __main__ - INFO - Finished search for city ID for city name: Florianópolis and state: SC
-2024-08-31 01:48:11,803 - werkzeug - INFO - 127.0.0.1 - - [31/Aug/2024 01:48:11] "POST /weather/getCityId HTTP/1.1" 200 -
+```2024-08-31 01:48:11,801 - __main__ - INFO - Incoming search for city ID request for city name: Florianópolis and state: SC```  
+```2024-08-31 01:48:11,802 - __main__ - INFO - Cache hit for City: Florianópolis```  
+```2024-08-31 01:48:11,802 - __main__ - INFO - Finished search for city ID for city name: Florianópolis and state: SC```  
+```2024-08-31 01:48:11,803 - werkzeug - INFO - 127.0.0.1 - - [31/Aug/2024 01:48:11] "POST /weather/getCityId HTTP/1.1" 200 -```  
 
 A detailed Postman Collection is also provided in the package for easier learning of its usage.
 
