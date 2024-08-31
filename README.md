@@ -9,9 +9,9 @@ This API backend will cache all weather (1 hour expiration time) and city identi
 
 The main endpoints are:
 
-POST /weather/getInfo: Will query the ClimaTempo API, using the provided City ID and number of future days to be included in the weather report.
-POST /weather/getCityId: Get specific city's ID by city name and state name abbreviation. This is an utility endpoint to facilitate the search of city IDs to request weather reports.
-PUT /weather/registerCity: Register city flag for token, so token has access to the weather report for the chosen city
+-POST /weather/getInfo: Will query the ClimaTempo API, using the provided City ID and number of future days to be included in the weather report.  
+-POST /weather/getCityId: Get specific city's ID by city name and state name abbreviation. This is an utility endpoint to facilitate the search of city IDs to request weather reports.  
+-PUT /weather/registerCity: Register city flag for token, so token has access to the weather report for the chosen city  
 
 ## Technologies used:
 -Python  
