@@ -249,5 +249,6 @@ def get_cached_city_data(city_name, state):
     logger.info('Cache miss for City: %s', city_name)
     return None    
 
+# Remember to configure the host and port if going to open the API to the internet
 if __name__ == '__main__':
     app.run(host="localhost", port=8000, debug=False)

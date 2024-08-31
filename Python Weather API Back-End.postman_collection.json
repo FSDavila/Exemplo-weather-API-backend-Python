@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "683c09ca-8809-4081-8ecd-af770b56f17b",
+		"name": "Python Weather API Back-End",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10808004"
+	},
+	"item": [
+		{
+			"name": "Register city for token",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "54f50e673d5e1366beaccaec5a8c012e",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "city_id",
+							"value": "4915",
+							"description": "ID of the specific city which you will register for use of the weather report in your API token. ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/weather/registerCity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"weather",
+						"registerCity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get weather info for a specific city",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "54f50e673d5e1366beaccaec5a8c012e",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "city_id",
+							"value": "4915",
+							"description": "ID of the specific city for generating the weather report. Your API token must have this city ID registered in the Register City endpoint.",
+							"type": "text"
+						},
+						{
+							"key": "forecast_days",
+							"value": "15",
+							"description": "Forecast days to be listed in the report. Values: 15 or 270 days. This information is cached to avoid unecessary calls to the API. Default: 15",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/weather/getInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"weather",
+						"getInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get specific city's ID",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "54f50e673d5e1366beaccaec5a8c012e",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "city_name",
+							"value": "Florianópolis",
+							"description": "ID of the specific city for generating the weather report. Your API token must have this city ID registered in the Register City endpoint.",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "SC",
+							"description": "Name of state/province where the specific city is located",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/weather/getCityId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"weather",
+						"getCityId"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
