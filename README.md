@@ -24,7 +24,7 @@ The main endpoints are:
 
 ## Technologies used:
 -Python  
--Flask (For creating the API endpoint)  
+-Flask (For creating the API endpoints)  
 -Flask-Restful  
 -Flask-CORS  
 -Python HTTP Requests  
