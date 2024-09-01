@@ -52,7 +52,6 @@ def get_info():
         # Check cache first
         cached_data = get_cached_weather_data(city_id, forecast_days)
         if cached_data:
-            logger.info('Cache hit for the period %s days for City ID: %s', forecast_days, city_id)
             logger.info("Finished processing weather report for city ID: " + city_id + " for the next " + forecast_days + " days")
             return jsonify(cached_data)
 
