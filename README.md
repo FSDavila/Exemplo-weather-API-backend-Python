@@ -19,7 +19,7 @@ A detailed Postman Collection is also provided in the package for easier learnin
 The main endpoints are:
 
 -POST /weather/getInfo: Will query the ClimaTempo API, using the provided City ID and number of future days to be included in the weather report.  
--POST /weather/v2/getInfo:  Will query the ClimaTempo API, using the provided City Name and State OR City ID. This endpoint can discover the City ID on the fly with only the city name and state abbreviation.
+-POST /weather/v2/getInfo:  Will query the ClimaTempo API, using the provided City Name and State OR City ID. This endpoint can discover the City ID on the fly with only the city name and state abbreviation.  
 -POST /weather/getCityId: Get specific city's ID by city name and state name abbreviation. This is an utility endpoint to facilitate the search of city IDs to request weather reports.  
 -PUT /weather/registerCity: Register city flag for token, so token has access to the weather report for the chosen city  
 
