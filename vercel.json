@@ -1,11 +1,11 @@
 {
-  "version": 2
+  "version": 2,
   "builds": [
     {
       "src": "./weather_api_backend.py,
       "use": "@vercel/python"
     }
-  ]
+  ],
   "routes" : [
     {
       "src": "/(.*),
