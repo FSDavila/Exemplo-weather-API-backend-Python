@@ -283,6 +283,10 @@ def get_city_id():
         error_detail = response_json.get("detail", "Unknown error")
         logger.error('API Response JSON: %s', response_json)
         return jsonify({'error': 'Unexpected error', 'details': str(e)}), 500
+      
+@app.route('/')
+def home():
+    return "Welcome to the Flask App!"
 
 def store_weather_data(city_id, forecast_days, weather_data):
     """Store weather data in the cache."""
@@ -354,6 +358,6 @@ def get_city_id_from_api_internal(city_name, state, token_api):
         return None
 
 # Remember to configure the host and port if going to open the API to the internet
-#if __name__ == '__main__':
-    #app.run(host="localhost", port=8080, debug=False)
+  if __name__ == '__main__':
+    app.run(host="localhost", port=80, debug=False)
     #app.run(debug=False)
