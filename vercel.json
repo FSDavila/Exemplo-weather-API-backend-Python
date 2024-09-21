@@ -2,18 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "./weather_api_backend.py,
+      "src": "./weather_api_backend.py",
       "use": "@vercel/python"
     }
   ],
-  "routes" : [
+  "routes": [
     {
-      "src": "/(.*),
-      "dest": "/"
-    },
-    {
-      "src": "/(.*),
-      "dest": "/weather/getCityId"
-    },
+      "src": "/(.*)",
+      "dest": "/weather_api_backend.py"
+    }
   ]
 }
