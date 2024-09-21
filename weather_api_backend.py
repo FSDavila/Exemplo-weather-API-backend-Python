@@ -354,6 +354,6 @@ def get_city_id_from_api_internal(city_name, state, token_api):
         return None
 
 # Remember to configure the host and port if going to open the API to the internet
-if __name__ == '__main__':
+#if __name__ == '__main__':
     #app.run(host="localhost", port=8080, debug=False)
     #app.run(debug=False)
