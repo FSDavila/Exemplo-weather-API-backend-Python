@@ -355,4 +355,4 @@ def get_city_id_from_api_internal(city_name, state, token_api):
 
 # Remember to configure the host and port if going to open the API to the internet
 if __name__ == '__main__':
-    app.run(host="localhost", port=8000, debug=False)
+    app.run(host="https://python-weather-api-backend.vercel.app", port=443, debug=False)
