@@ -1,0 +1,11 @@
+[project]
+name = "python-weather-api-backend"
+version = "1.0.0"
+description = "A Python application that queries the ClimaTempo Weather API for weather data about specific cities and regions"
+readme = "README.md"
+requires-python = ">=3.6"
+homepage = "https://github.com/FSDavila/Python-Weather-API-Backend"
+
+[project.author]
+name = "Filipe S. D'Avila"
+email = "diusuorder@hotmail.com"
