@@ -1,6 +1,8 @@
 # python-weather-api-backend
 A Python application that queries the ClimaTempo Weather API for weather data about specific cities and regions.
 
+You can see this API in action in my instance of the front/backend hosted on Vercel: https://react-js-weather-api-frontend.vercel.app/
+
 A valid ClimaTempo API token is necessary, and one can generate a token via: https://advisor.climatempo.com.br/home/#!/tokens
 
 it is also necessary to apply your city's flag to your token so it has permissions to send requests for weather reports for your city in the API. 
